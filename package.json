@@ -4,11 +4,8 @@
   "description": "Restful Api",
   "main": "server.js",
   "scripts": {
-    "client-install": "yarn --prefix client",
-    "client": "yarn start --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js",
-    "dev": "concurrently  \"yarn run server\"  \"yarn run client\" "
+    "server": "nodemon server.js"
   },
   "author": "QiaoQiao",
   "license": "ISC",
