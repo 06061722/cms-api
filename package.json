@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Restful Api",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "yarn --prefix client",
+    "client": "yarn start --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently  \"yarn run server\"  \"yarn run client\" "
+  },
+  "author": "QiaoQiao",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "3.0.2",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.4.16",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
